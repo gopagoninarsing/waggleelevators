@@ -1,0 +1,18 @@
+uuid: f4a361f3-d78a-4705-a80b-d8db3c78a3a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.orders
+id: node.orders.title
+field_name: title
+entity_type: node
+bundle: orders
+label: 'Customer Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

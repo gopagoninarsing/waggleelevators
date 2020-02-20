@@ -1,0 +1,23 @@
+uuid: f87c786f-c5c2-4374-b0bf-fdd7595c62b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agreed_payment
+    - node.type.orders
+id: node.orders.field_agreed_payment
+field_name: field_agreed_payment
+entity_type: node
+bundle: orders
+label: 'Agreed Payment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,19 @@
+uuid: ed260a8f-9fe9-4270-9900-8ced6b6f64ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_location
+    - node.type.orders
+id: node.orders.field_customer_location
+field_name: field_customer_location
+entity_type: node
+bundle: orders
+label: 'Customer Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

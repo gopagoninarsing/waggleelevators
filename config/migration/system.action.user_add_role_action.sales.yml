@@ -1,0 +1,14 @@
+uuid: 481160c5-e469-4c21-a12b-6b3a53454916
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.sales
+  module:
+    - user
+id: user_add_role_action.sales
+label: 'Add the Sales role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sales

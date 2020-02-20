@@ -1,0 +1,31 @@
+uuid: 967c524a-6a8f-4566-ae59-5147d27f5467
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payments
+    - node.type.orders
+    - paragraphs.paragraphs_type.order_payments
+  module:
+    - entity_reference_revisions
+id: node.orders.field_payments
+field_name: field_payments
+entity_type: node
+bundle: orders
+label: Payments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      order_payments: order_payments
+    target_bundles_drag_drop:
+      order_payments:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

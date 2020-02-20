@@ -1,0 +1,94 @@
+uuid: 69f58a91-7e57-4057-b239-7f8e27b2437c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.orders.field_agreed_payment
+    - field.field.node.orders.field_customer_location
+    - field.field.node.orders.field_customer_mobile
+    - field.field.node.orders.field_lift_specifications
+    - field.field.node.orders.field_order_status
+    - field.field.node.orders.field_payments
+    - field.field.node.orders.field_sales_representative
+    - node.type.orders
+  module:
+    - paragraphs
+    - text
+id: node.orders.default
+targetEntityType: node
+bundle: orders
+mode: default
+content:
+  field_agreed_payment:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_customer_location:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_customer_mobile:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_lift_specifications:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_order_status:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_payments:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_sales_representative:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

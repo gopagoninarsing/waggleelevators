@@ -1,0 +1,23 @@
+uuid: 22d7edba-8da0-4127-9ca8-b6f815edd660
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - serialization
+    - user
+_core:
+  default_config_hash: t_jfECmZhJqBOJuSOFn87EOi_TWi-_fRYTuJgd19vgg
+id: entity.node
+plugin_id: 'entity:node'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - DELETE
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - cookie

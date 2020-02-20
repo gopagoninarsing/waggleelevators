@@ -1,0 +1,9 @@
+uuid: 3eb25f40-ee83-4326-b315-3ff3967a9f70
+langcode: en
+status: true
+dependencies: {  }
+id: sales
+label: Sales
+weight: 3
+is_admin: null
+permissions: {  }

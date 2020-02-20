@@ -1,0 +1,33 @@
+uuid: 104b9e8d-c7d1-4301-9ff2-45406cb3de42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sales_representative
+    - node.type.orders
+id: node.orders.field_sales_representative
+field_name: field_sales_representative
+entity_type: node
+bundle: orders
+label: 'Sales Representative'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        sales: sales
+        administrator: '0'
+        customer: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

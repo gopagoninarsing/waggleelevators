@@ -1,0 +1,24 @@
+uuid: 5b13a35e-bda5-4ea4-8f02-7cff71e8b417
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_payment_date
+    - paragraphs.paragraphs_type.order_payments
+  module:
+    - datetime
+id: paragraph.order_payments.field_payment_date
+field_name: field_payment_date
+entity_type: paragraph
+bundle: order_payments
+label: 'Payment Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

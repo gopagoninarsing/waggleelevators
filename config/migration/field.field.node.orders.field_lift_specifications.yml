@@ -1,0 +1,21 @@
+uuid: e4ef742a-46f1-4451-9e3c-4e4308927b6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lift_specifications
+    - node.type.orders
+  module:
+    - text
+id: node.orders.field_lift_specifications
+field_name: field_lift_specifications
+entity_type: node
+bundle: orders
+label: 'Lift Specifications'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

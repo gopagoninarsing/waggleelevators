@@ -1,0 +1,47 @@
+uuid: 84202b74-f3f2-40de-86c5-2df883d9dde8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.order_payments.field_notes
+    - field.field.paragraph.order_payments.field_paid_amount
+    - field.field.paragraph.order_payments.field_payment_date
+    - field.field.paragraph.order_payments.field_payment_mode
+    - paragraphs.paragraphs_type.order_payments
+  module:
+    - datetime
+id: paragraph.order_payments.default
+targetEntityType: paragraph
+bundle: order_payments
+mode: default
+content:
+  field_notes:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_paid_amount:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_payment_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_payment_mode:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

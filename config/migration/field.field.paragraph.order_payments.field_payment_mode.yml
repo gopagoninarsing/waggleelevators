@@ -1,0 +1,23 @@
+uuid: 7b234573-0443-45bf-81f4-bf37bff9dd65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_payment_mode
+    - paragraphs.paragraphs_type.order_payments
+  module:
+    - options
+id: paragraph.order_payments.field_payment_mode
+field_name: field_payment_mode
+entity_type: paragraph
+bundle: order_payments
+label: 'Payment Mode'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Check
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: 673eaa00-3532-42d1-8ed1-eb325a5d16e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paid_amount
+    - paragraphs.paragraphs_type.order_payments
+id: paragraph.order_payments.field_paid_amount
+field_name: field_paid_amount
+entity_type: paragraph
+bundle: order_payments
+label: 'Paid Amount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

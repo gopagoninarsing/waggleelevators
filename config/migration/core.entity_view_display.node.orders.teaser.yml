@@ -1,0 +1,34 @@
+uuid: 5f8a6830-6a85-4e8f-a7d0-a6ad04aa87e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.orders.field_agreed_payment
+    - field.field.node.orders.field_customer_location
+    - field.field.node.orders.field_customer_mobile
+    - field.field.node.orders.field_lift_specifications
+    - field.field.node.orders.field_order_status
+    - field.field.node.orders.field_payments
+    - field.field.node.orders.field_sales_representative
+    - node.type.orders
+  module:
+    - user
+id: node.orders.teaser
+targetEntityType: node
+bundle: orders
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_agreed_payment: true
+  field_customer_location: true
+  field_customer_mobile: true
+  field_lift_specifications: true
+  field_order_status: true
+  field_payments: true
+  field_sales_representative: true
